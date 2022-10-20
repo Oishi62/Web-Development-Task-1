@@ -3,4 +3,4 @@
 This is my first task under the GRIP program of the Sparks Foundation.
 Task 1 - Basic Banking System where we can transfer money.
 Frontend: HTML and CSS
-Backednd: PHP
+Backend: PHP
