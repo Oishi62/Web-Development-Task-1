@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet">
+    <title>Form Submission</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            
+        }
+        body{
+            background: linear-gradient(to left,#dd5e89, #f7bb97);
+            font-family: 'Klee One';
+            font-weight: bold;
+        }
+        #outside{
+            margin-left:420px;
+        }
+        .diva{
+            text-align: center;
+            background: linear-gradient(to right,#de6262 , #ffb88c);
+            width:500px;
+            border:8px outset  #f45c43;
+            height:380px
+        }
+    
+        hr{
+            border-style: dotted none none none;
+            height:0;
+            border-width: thick;
+            border-color:black;
+            margin:0 auto 0 auto;
+        }
+        .diva:hover{
+            box-shadow: 0 0 8px 8px rgb(250, 21, 21);
+            width:520px;
+            height:360px;
+        }
+        table th, table td{
+        padding: 10px; /* Apply cell padding */
+    }
+    </style>
+
+</head>
+<body>
+
+    <br><br>
+    <hr style="width:60%">
+    <h1 style="text-align: center;color:red;">DETAILS</h1><br>
+    <hr style="width:40%"><br><br>
+    <div id="outside">
+    <div class="diva">
+<table style="border-collapse: collapse; border:2px; " >
+    <form action="form.php" method="post">
+        <h3>SEND MONEY</h3><br><br>
+        <tr>
+        <td> Enter your name </td><td><input type="text" name="T1" ></td> </tr>
+      <tr> <td> Enter the recipient's name</td><td> <input type="text" name="T2"> </td></tr>
+       <tr> <td>Enter the amount of money you want to transfer</td> <td> <input type="number" name="T3"></td></tr>
+       <tr> <td><input type="submit" value="SEND MONEY" style="font-family: 'Klee One';font-weight:bold;border:2px dotted black;width:200px;" ></td><td>
+        <input type="reset" value="RESET" style="font-family: 'Klee One';font-weight:bold;border:2px dotted black;width:100px;"></td></tr>
+
+    </form>
+</table>
+    </div><br><br>
+    </div>
+</body>
+</html>
